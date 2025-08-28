@@ -8,11 +8,8 @@ book:
   date: "today"
   chapters:
     - index.qmd
-    - intro.qmd
     - basics.qmd
     
-
-bibliography: references.bib
 
 format:
   html:
