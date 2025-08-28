@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Python Exercises",
+    "section": "",
+    "text": "Preface\nTo be written.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "basics.html",
+    "href": "basics.html",
+    "title": "2  Basics",
+    "section": "",
+    "text": "2.1 Finding triangles\nimport math\ndef find_xyz(n = 40):\n    m = math.ceil(n / 3)\n    c = 0\n    re = list()\n    for x in range(1, m + 1):\n        for y in range(x, n + 1):\n            z = n - (x + y)\n            if z &gt;= y and x + y &gt; z:\n                c += 1\n                re.append((x, y, z))\n    return [c, re]\n\ncount, results = find_xyz(40)\n\nprint(f\"Number of solutions: {count}\")\nprint(\"Solutions:\")\nfor triple in results:\n    print(triple)\n\nNumber of solutions: 33\nSolutions:\n(2, 19, 19)\n(3, 18, 19)\n(4, 17, 19)\n(4, 18, 18)\n(5, 16, 19)\n(5, 17, 18)\n(6, 15, 19)\n(6, 16, 18)\n(6, 17, 17)\n(7, 14, 19)\n(7, 15, 18)\n(7, 16, 17)\n(8, 13, 19)\n(8, 14, 18)\n(8, 15, 17)\n(8, 16, 16)\n(9, 12, 19)\n(9, 13, 18)\n(9, 14, 17)\n(9, 15, 16)\n(10, 11, 19)\n(10, 12, 18)\n(10, 13, 17)\n(10, 14, 16)\n(10, 15, 15)\n(11, 11, 18)\n(11, 12, 17)\n(11, 13, 16)\n(11, 14, 15)\n(12, 12, 16)\n(12, 13, 15)\n(12, 14, 14)\n(13, 13, 14)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Python Exercises"
+  author: "Lingyun Zhang"
+  date: "today"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - basics.qmd
+    
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+  
+
+
+
