@@ -18,5 +18,15 @@
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basics</span>"
     ]
+  },
+  {
+    "objectID": "basics.html#finding-probability",
+    "href": "basics.html#finding-probability",
+    "title": "1  Basics",
+    "section": "1.2 Finding probability",
+    "text": "1.2 Finding probability\n\nfrom itertools import combinations\nfrom math import prod\n\n# Combinations from a list of numbers\ndata = range(1, 10)\n# Get all combinations of length 5\ncombs_length_5 = combinations(data, 5)\nn = 0\nt = 0\nfor c in combs_length_5:\n    t +=  1\n    if prod(c) % 8 == 0 :\n        n += 1\nprob = n / t\nprint(f\"The probability = {prob}\")\n\nThe probability = 0.7936507936507936",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basics</span>"
+    ]
   }
 ]

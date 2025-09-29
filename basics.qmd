@@ -24,3 +24,24 @@ for triple in results:
     print(triple)
  
 ```
+
+## Finding probability
+
+```{python}
+from itertools import combinations
+from math import prod
+
+# Combinations from a list of numbers
+data = range(1, 10)
+# Get all combinations of length 5
+combs_length_5 = combinations(data, 5)
+n = 0
+t = 0
+for c in combs_length_5:
+    t +=  1
+    if prod(c) % 8 == 0 :
+        n += 1
+prob = n / t
+print(f"The probability = {prob}")
+
+```
